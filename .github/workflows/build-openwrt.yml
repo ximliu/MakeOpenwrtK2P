@@ -44,6 +44,7 @@ jobs:
       run: |
         git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git openwrt/package/mentohust
         git clone https://github.com/BoringCat/luci-app-mentohust.git openwrt/package/luci-app-mentohust
+        git clone https://github.com/Mrbai98/luci-theme-atmaterial.git openwrt/package/luci-theme-atmaterial
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
