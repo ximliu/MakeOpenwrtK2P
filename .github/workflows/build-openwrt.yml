@@ -44,8 +44,6 @@ jobs:
       run: |
         git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git openwrt/package/mentohust
         git clone https://github.com/BoringCat/luci-app-mentohust.git openwrt/package/luci-app-mentohust
-        git clone https://github.com/MeIsReallyBa/k2p-openwrt-mt7615_5.0.2.0 && mv k2p-openwrt-mt7615_5.0.2.0/mtk openwrt/package/mtk
-        git clone https://github.com/Apocalypsor/MakeOpenwrtX64.git && mv MakeOpenwrtX64/smartdns-install openwrt/package/smartdns-install
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
